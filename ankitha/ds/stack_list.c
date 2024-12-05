@@ -102,20 +102,23 @@ void count()
 int search(int num)
 {
 	struct node* temp = top;
+	int pos = 0;
 	if(top == NULL)
 	{
 		printf("List is empty\n");
 		return 0;
 	}
-	if(temp->data == num)
+	while(temp != NULL)
 	{
-		printf("Element found: %d\n",temp->data);
+		if(temp->data == num)
+		{
+			printf("Element found: %d at position: %d\n",temp->data,pos);
+			return 0;
+		}
+		temp = temp->next;
+		pos++;
 	}
-	else
-	{
-		printf("Element not found\n");
-	}
-
+	printf("Element not found\n");
 }
 
 
