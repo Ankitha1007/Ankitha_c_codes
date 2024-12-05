@@ -18,28 +18,32 @@ void push(int value)
 		printf("Failed to allocate memory in heap segment\n");
 		return;
 	}
+
+	new_node->data = value;
+	new_node->next = top;
+	top = new_node;
 	
-	if(new_node != NULL)
-	{
-		new_node->data = value;
+	// if(new_node != NULL)
+	// {
+	// 	new_node->data = value;
 
-		if(top == NULL)
-		{
-			new_node->next = NULL;
+	// 	if(top == NULL)
+	// 	{
+	// 		new_node->next = NULL;
 		
-		}
-		else
-		{
-			new_node->next = top;
-		}
-		top = new_node;
+	// 	}
+	// 	else
+	// 	{
+	// 		new_node->next = top;
+	// 	}
+	// 	top = new_node;
 
-		printf("inserted data in new node: %d\n",new_node->data);
-	}
-	else
-	{
-		printf("malloc error");
-	}
+	// 	printf("inserted data in new node: %d\n",new_node->data);
+	// }
+	// else
+	// {
+	// 	printf("malloc error");
+	// }
 }
 
 int pop()
