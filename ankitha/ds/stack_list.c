@@ -70,12 +70,11 @@ void display()
 		return 0;
 	}
 
-	while(temp->next != NULL)
+	while(temp != NULL)
 	{
 		printf("%d\n",temp->data);
 		temp = temp->next;  
 	}
-	 printf("%d", temp->data);
 }
 
 void count()
