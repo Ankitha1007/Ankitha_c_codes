@@ -1,20 +1,18 @@
 // Write a c program to sort the numbers of a given list by sum of their digit
-
+// ouput:- 1+1=2, 1+2=3, 1+3=4..........!!
 
 #include <stdio.h>
-
 int main() {
-    int arr[]={21,22,23,24,25,26,27};
-    int size = sizeof(arr)/sizeof(arr[0]);
-    int i,digit,next,sum=0;
+    int arr[]={11,12,13,14,15,16,17,18,19,20};
+    int size =sizeof(arr)/sizeof(arr[0]);
+    int i,ones=0,tens=0,sum=0;
     for(i=0;i<size;i++)
     {
-        digit= arr[i]%10;
-        printf("%d\n",digit);
-        next = arr[i] / 10;
-        printf("%d\n",next);
-        sum = digit +next;
-        printf("%d sum value\n",sum);
-        
+        tens = arr[i]/10;
+        printf("%d\t",tens);
+        ones =arr[i]%10;
+        printf("%d\t",ones);
+        sum= ones+tens;
+        printf("sum: %d\n",sum);
     }
 }
