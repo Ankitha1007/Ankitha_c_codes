@@ -1,4 +1,15 @@
 /*calculates the sum of digits for each element in an array of integers */
+/*
+output:-
+1
+3
+6
+10
+15
+21
+28
+36
+*/
 
 #include <stdio.h>
 
