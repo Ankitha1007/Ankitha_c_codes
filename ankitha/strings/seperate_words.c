@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-
 void sep_word(char *str, int len)
 {
 	int i,j;
@@ -14,9 +13,6 @@ void sep_word(char *str, int len)
 		}
 	}
 	printf("%s\n",temp);
-
-
-
 }
 
 void main()
