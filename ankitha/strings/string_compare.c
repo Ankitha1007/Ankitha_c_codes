@@ -11,7 +11,7 @@ char str_cmp(char *str, char *str1)
 	    printf("Strings not same\n");
 		return 0;
 	}
-	for(i=0;i<l1;i++)
+	for(i=0;i<l2;i++)
 	{
 		if(str[i] != str1[i])
 		{
