@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int str_len(char *src)
+int str_length(char *src)
 {
 	int i,count=0;
 	for(i=0; src[i]!='\0'; i++)
@@ -15,6 +15,6 @@ void main()
 {
 	char str[100]= "mirafra.com";
 	int len;
-	len = str_len(str);
+	len = str_length(str);
 	printf("%d is the length of string\n",len);
 }
