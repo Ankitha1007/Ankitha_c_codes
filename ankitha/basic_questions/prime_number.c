@@ -26,12 +26,4 @@ int  main()
 	{
 		printf("Non prime number: %d\n",n);
 	}
-
-
-
-
-
-
-
-
 }
