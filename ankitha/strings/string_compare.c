@@ -1,4 +1,38 @@
 #include <stdio.h>
+
+int string_compare(char str[],char str1[])
+{
+    int i;
+    for(i=0;str[i]==str1[i];i++)
+    {
+        if(str1[i] == '\0')
+        {
+            return 0;
+        }
+    }
+    return (str[i] - str1[i]);
+}
+int main() 
+{
+    char str[10]="ankithaaaa";
+    char str1[10]="ankitha";
+    int res=string_compare(str,str1);
+    if(res ==0)
+    {
+        printf("same\n");
+    }
+    else
+    {
+        printf("not same\n");
+    }
+}
+
+
+
+
+
+
+/*#include <stdio.h>
 #include <string.h>
 
 char str_cmp(char *str, char *str1)
@@ -28,4 +62,4 @@ void main()
 	char str[]="ankitha";
 	char str1[]="ankitha";
 	str_cmp(str,str1);
-}
+}*/
