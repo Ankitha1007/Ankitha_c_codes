@@ -7,8 +7,7 @@ char func(char*arr)
         return 0;
     }
     func(arr+1);
-    printf("%c",*arr);
-    
+    printf("%c",*arr);   
 }
 
 
